@@ -47,7 +47,6 @@ const loginExistingUser = async (payload: TUserLogin) => {
   return {
     user: {
       _id: user._id,
-      username: user.username,
       email: user.email,
     },
     accessToken: accessToken,
@@ -269,7 +268,6 @@ const googleLogin = async (token: string) => {
     return {
       user: {
         _id: user._id,
-        username: user.username,
         email: user.email,
         avatar: user.avatar,
       },

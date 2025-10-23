@@ -4,10 +4,10 @@ import { TUser } from './user.interface';
 import { User } from './user.model';
 
 const createUserIntoDB = async (payload: TUser) => {
-  const { username } = payload;
+  const { email } = payload;
 
   // check duplicate user
-  const isUserExists = await User.findOne({ username });
+  const isUserExists = await User.findOne({ email });
   if (isUserExists) {
     throw new AppError(
       httpStatus.ALREADY_REPORTED,

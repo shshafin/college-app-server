@@ -8,14 +8,13 @@ import httpStatus from 'http-status';
 const createUser: RequestHandler = async (req, res, next) => {
   try {
     const result = await UserServices.createUserIntoDB(req.body);
-    const { _id, username, email, createdAt, updatedAt } = result;
+    const { _id, email, createdAt, updatedAt } = result;
 
     res.status(201).json({
       success: true,
       message: 'User registered successfully',
       data: {
         _id,
-        username,
         email,
         createdAt,
         updatedAt,

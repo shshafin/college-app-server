@@ -36,20 +36,20 @@ Make sure you have the following installed on your machine:
 1. Create a `.env` file in the project root and set the following environment variables:
    ```env
    NODE_ENV=development
-PORT=5000
-DB_URL=
-JWT_ACCESS_SECRET=secret
-BCRYPT_SALT_ROUNDS=10
-FRONTEND_URL=http://localhost:3000
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_SECURE=false
-SMTP_USER=
-SMTP_PASS=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-GOOGLE_REDIRECT_URI=http://localhost:5000/api/v1/auth/google/callback
-BACKEND_URL=http://localhost:5000
+   PORT=5000
+   DB_URL=
+   JWT_ACCESS_SECRET=secret
+   BCRYPT_SALT_ROUNDS=10
+   FRONTEND_URL=http://localhost:3000
+   SMTP_HOST=smtp.gmail.com
+   SMTP_PORT=587
+   SMTP_SECURE=false
+   SMTP_USER=
+   SMTP_PASS=
+   GOOGLE_CLIENT_ID=
+   GOOGLE_CLIENT_SECRET=
+   GOOGLE_REDIRECT_URI=http://localhost:5000/api/v1/auth/google/callback
+   BACKEND_URL=http://localhost:5000
    ```
    Replace `<your-mongodb-uri>` with your actual MongoDB connection URI and `<your-secret-key>` with a secure secret key for JWT.
 
